@@ -1,0 +1,50 @@
+{
+  "name": "@izcream/gitignore",
+  "version": "0.1.0",
+  "description": "simple .gitignore generator",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izcream/gitignore-cli.git"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "bin": {
+    "gitignore": "index.js",
+    "gi": "index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "lint": "tsc --noEmit",
+    "test": "vitest",
+    "test:cover": "vitest --coverage"
+  },
+  "keywords": [
+    "git",
+    "gitignore",
+    "cli"
+  ],
+  "author": "izcream*",
+  "license": "MIT",
+  "dependencies": {
+    "kolorist": "^1.7.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.4",
+    "@types/prompts": "^2.4.2",
+    "@vitest/coverage-c8": "^0.29.2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vitest": "^0.29.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
